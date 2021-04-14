@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+<head>
+	<meta charset="utf-8" />
+	<title>JS lekcja 1 script nr 3</title>
+	<script>
+	function myFunction1()
+	{
+		alert("witaj");
+	}
+	function myFunction2()
+	{
+		document.getElementById("wynik").innerHTML="Przykładowy Tekst";
+	}
+	function myFunction3()
+	{
+		document.getElementById("wynik").innerHTML="";
+	}
+	function myFunction4()
+	{
+		document.getElementById("image").innerHTML='<img src="img1.jpg">';
+	}
+	function myFunction5()
+	{
+		document.getElementById("image").innerHTML="";
+	}
+		
+		function myFunction6()
+	{
+	
+	
+		var a = document.getElementById("a").value;
+		var b = document.getElementById("b").value;
+		a = parseFloat(a);
+		b = parseFloat(b);
+		document.getElementById("suma").innerHTML = a+b;
+	}
+	
+	</script>
+
+</head>
+
+<body>
+	
+	<button onclick="myFunction1()">Alert </button>
+	<button onclick="myFunction2()">innerHTML </button>
+	<button onclick="myFunction3()">Wyłącz tekst </button>
+	<button onclick="myFunction4()">Pokaż zdjecie </button>
+	<button onclick="myFunction5()">Ukryj zdjecie </button>
+	
+	
+	<div id="wynik">...</div>
+	<div id="image">...</div>
+	<br>
+	<br>
+
+	a = <input type="number" id = "a" value =2>
+	b = <input type="number" id = "b" value = 3>
+
+	<button onclick="myFunction6()">Wykonaj dzialanie a + b </button>
+	<div id="suma"></div>
+	
+	
+	
+</body>
+</html>
